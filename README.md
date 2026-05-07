@@ -13,7 +13,8 @@ test.describe('PARCO MTP 2026 - Eligibility Form', () => {
     await expect(page.getByText('Management Trainee Program 2026')).toBeVisible();
   });
 
-  test('All required fields are visible', async ({ page }) => {
+  test('All required fields are visible', async ({ page }) => 
+  {
     await page.goto(URL);
     await expect(page.getByLabel(/First name/i)).toBeVisible();
     await expect(page.getByLabel(/Last name/i)).toBeVisible();
